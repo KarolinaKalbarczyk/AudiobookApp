@@ -1,0 +1,5 @@
+
+psquid:MaximumInheritanceDepth"=This class has 10 parents which is greater than 5 authorized.(åÚ’øÿÿÿÿ8ÊéÃ‘¨,
+usquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(¨“˜8ÊéÃ‘¨,
+bsquid:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8ÊéÃ‘¨,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÊéÃ‘¨,

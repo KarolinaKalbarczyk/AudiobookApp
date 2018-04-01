@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/RelativeMain"
+    tools:context="com.example.android.musicapp.MainActivity">
+
+    <RelativeLayout
+        android:background="@android:color/background_dark"
+        android:id="@+id/firtRelativeLayout"
+        style="@style/RelativeMain">
+
+        <TextView
+            android:background="@drawable/blackout"
+            android:id="@+id/first"
+            style="@style/TextMain"/>
+
+        <TextView
+            android:id="@+id/second"
+            style="@style/TextMain"
+            android:layout_toRightOf="@id/first"
+            android:background="@drawable/hobbit"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+
+        android:id="@+id/secondRelativeLayout"
+        android:layout_marginTop="207dp"
+        style="@style/RelativeMain">
+
+        <TextView
+            android:background="@drawable/christie"
+            android:id="@+id/third"
+            style="@style/TextMain"/>
+
+        <TextView
+            android:id="@+id/fourth"
+            android:layout_toRightOf="@id/third"
+            style="@style/TextMain"
+            android:background="@drawable/zycie"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:id="@+id/thirdRelativeLayout"
+        android:layout_marginTop="400dp"
+        style="@style/RelativeMain">
+
+        <TextView
+            android:background="@drawable/witch"
+            android:id="@+id/fifth"
+            style="@style/TextMain"/>
+
+        <TextView
+            android:id="@+id/sixth"
+            android:layout_toRightOf="@id/fifth"
+            style="@style/TextMain"
+            android:background="@drawable/harry"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

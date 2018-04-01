@@ -1,0 +1,67 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="LinearLayout" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#e7e3f4</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Cover" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">@dimen/layout_width_cover</item>
+        <item name="android:layout_height">@dimen/layout_height_cover</item>
+        <item name="android:layout_marginTop">@dimen/layout_marginTop_cover</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">@dimen/layout_marginLeft_cover</item>
+    </style>
+
+    <style name="ListView" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:choiceMode">singleChoice</item>
+        <item name="android:listSelector">#D1C4E9</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/layout_height_list</item>
+        <item name="android:paddingTop">@dimen/paddingTop_list</item>
+        <item name="android:paddingBottom">@dimen/paddingBottom_list</item>
+        <item name="android:paddingLeft">@dimen/paddingLeft_list</item>
+        <item name="android:paddingRight">@dimen/paddingRight_list</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="TextView" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textSize">@dimen/textsize_text</item>
+        <item name="android:layout_marginLeft">@dimen/layout_marginLeft_text</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Button" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_marginLeft">@dimen/layout_marginLeft_button</item>
+        <item name="android:layout_width">@dimen/layout_width_button</item>
+        <item name="android:layout_height">@dimen/layout_height_button</item>
+    </style>
+
+    <style name="RelativeLayout" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_marginTop">@dimen/layout_marginTop_relative</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/layout_height_relative</item>
+    </style>
+
+    <style name="RelativeMain" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="TextMain" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">@dimen/layout_width_textmain</item>
+        <item name="android:layout_height">@dimen/layout_height_textmain</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

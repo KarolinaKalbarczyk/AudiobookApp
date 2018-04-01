@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LinearLayout"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        style="@style/Cover"
+        android:src="@drawable/hobbit"/>
+
+    <ListView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        style="@style/ListView"
+        android:id="@+id/list"
+        tools:context="com.example.android.musicapp.First">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/autor"
+        android:text="@string/author_2"
+        style="@style/TextView" />
+
+    <TextView
+        android:id="@+id/wyswietlRozdzial"
+        android:text="@string/ch1_2"
+        style="@style/TextView" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_centerInParent="true"
+        android:colorControlActivated="#c51162"
+        android:progressDrawable="@drawable/progress_drawable"
+        android:max="@dimen/max_progressbar"
+        android:progress="@dimen/progress_progressbar"
+        android:layout_marginTop="@dimen/marginTop_progressbar"
+        android:progressBackgroundTint="#D1C4E9"
+        android:progressTint="#cc3184"
+        android:layout_marginLeft="@dimen/marginLeft_progressbar"
+        android:layout_width="@dimen/layout_width_progressbar"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        style="@style/RelativeLayout">
+
+        <Button
+            android:id="@+id/previous"
+            android:background="@drawable/replay"
+            style="@style/Button" />
+
+        <Button
+            android:background="@drawable/play"
+            android:id="@+id/play"
+            android:layout_toRightOf="@id/previous"
+            style="@style/Button" />
+
+        <Button
+            android:background="@drawable/forward"
+            android:id="@+id/next"
+            android:layout_toRightOf="@id/play"
+            style="@style/Button" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

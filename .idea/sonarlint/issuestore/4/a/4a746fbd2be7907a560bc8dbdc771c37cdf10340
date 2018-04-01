@@ -1,0 +1,5 @@
+
+bsquid:UselessImportCheck"4Remove this unused import 'android.widget.GridView'.(éĞÏ«ÿÿÿÿÿ8öÑÃ‘¨,
+_squid:UselessImportCheck"1Remove this unused import 'android.widget.Toast'.(©›ïÍúÿÿÿÿ8öÑÃ‘¨,
+`squid:UselessImportCheck"7Remove this unused import 'android.widget.AdapterView'.(¶¾éæ8öÑÃ‘¨,
+ksquid:MaximumInheritanceDepth"=This class has 10 parents which is greater than 5 authorized.(²Ú±8öÑÃ‘¨,

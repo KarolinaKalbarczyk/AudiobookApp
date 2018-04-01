@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright 2013 The Android Open Source Project
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<resources>
+    <dimen name="layout_width_cover">200dp</dimen>
+    <dimen name="layout_height_cover">200dp</dimen>
+    <dimen name="layout_marginTop_cover">10dp</dimen>
+    <dimen name="layout_marginLeft_cover">110dp</dimen>
+    <dimen name="layout_height_list">230dp</dimen>
+    <dimen name="paddingTop_list">16dp</dimen>
+    <dimen name="paddingBottom_list">16dp</dimen>
+    <dimen name="paddingLeft_list">16dp</dimen>
+    <dimen name="paddingRight_list">16dp</dimen>
+    <dimen name="textsize_text">20sp</dimen>
+    <dimen name="layout_marginLeft_text">20dp</dimen>
+    <dimen name="layout_marginLeft_button">70dp</dimen>
+    <dimen name="layout_width_button">50dp</dimen>
+    <dimen name="layout_height_button">50dp</dimen>
+    <dimen name="layout_marginTop_relative">15dp</dimen>
+    <dimen name="layout_height_relative">50dp</dimen>
+    <dimen name="max_progressbar">100</dimen>
+    <dimen name="progress_progressbar">2</dimen>
+    <dimen name="marginTop_progressbar">20dp</dimen>
+    <dimen name="marginLeft_progressbar">20dp</dimen>
+    <dimen name="layout_width_progressbar">370dp</dimen>
+    <dimen name="layout_width_textmain">206dp</dimen>
+    <dimen name="layout_height_textmain">206dp</dimen>
+
+</resources>
