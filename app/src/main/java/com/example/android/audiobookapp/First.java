@@ -52,7 +52,7 @@ public class First extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 TextView wyswietl = (TextView) findViewById(R.id.wyswietlRozdzial);
                 wyswietl.setText(utwory.get(position).getRozdzial());
-                progressBar.setProgress(0);
+                //progressBar.setProgress(0);
             }
         });
 

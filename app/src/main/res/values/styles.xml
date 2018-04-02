@@ -15,6 +15,17 @@
         <item name="android:orientation">vertical</item>
     </style>
 
+    <style name="ProgressBar" parent="android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:colorControlActivated">#c51162</item>
+        <item name="android:progressBackgroundTint">#D1C4E9</item>
+        <item name="android:progressTint">#cc3184</item>
+        <item name="android:layout_marginTop">@dimen/marginTop_progressbar</item>
+        <item name="android:layout_marginStart">@dimen/marginLeft_progressbar</item>
+        <item name="android:layout_width">@dimen/layout_width_progressbar</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:progressDrawable">@drawable/progress_drawable</item>
+    </style>
+
     <style name="Cover" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="android:layout_width">@dimen/layout_width_cover</item>
         <item name="android:layout_height">@dimen/layout_height_cover</item>

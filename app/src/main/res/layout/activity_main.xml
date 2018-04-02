@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/RelativeMain"
-    tools:context="com.example.android.musicapp.MainActivity">
+    tools:context="com.example.android.audiobookapp.MainActivity">
 
     <RelativeLayout
         android:background="@android:color/background_dark"

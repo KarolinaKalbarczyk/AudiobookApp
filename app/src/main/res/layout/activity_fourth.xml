@@ -29,19 +29,8 @@
 
 
     <ProgressBar
-        style="@android:style/Widget.ProgressBar.Horizontal"
-        android:layout_centerInParent="true"
-        android:colorControlActivated="#c51162"
-        android:progressDrawable="@drawable/progress_drawable"
-        android:max="@dimen/max_progressbar"
-        android:progress="@dimen/progress_progressbar"
-        android:layout_marginTop="@dimen/marginTop_progressbar"
-        android:progressBackgroundTint="#D1C4E9"
-        android:progressTint="#cc3184"
-        android:layout_marginLeft="@dimen/marginLeft_progressbar"
-        android:layout_width="@dimen/layout_width_progressbar"
-        android:layout_height="wrap_content"
-        android:id="@+id/progressBar" />
+        style="@style/ProgressBar"
+        android:id="@+id/progressBar"/>
 
     <RelativeLayout
         style="@style/RelativeLayout">
