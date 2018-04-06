@@ -32,26 +32,8 @@
         style="@style/ProgressBar"
         android:id="@+id/progressBar"/>
 
-    <RelativeLayout
-        style="@style/RelativeLayout">
 
-        <Button
-            style="@style/Button"
-            android:id="@+id/previous"
-            android:background="@drawable/replay"/>
+    <include layout="@layout/buttons"></include>
 
-        <Button
-            style="@style/Button"
-            android:background="@drawable/play"
-            android:id="@+id/play"
-            android:layout_toRightOf="@id/previous"/>
-
-        <Button
-            style="@style/Button"
-            android:background="@drawable/forward"
-            android:id="@+id/next"
-            android:layout_toRightOf="@id/play"/>
-
-    </RelativeLayout>
 
 </LinearLayout>

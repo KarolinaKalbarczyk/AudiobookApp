@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RelativeLayout">
+
+    <Button
+        style="@style/Button"
+        android:id="@+id/previous"
+        android:background="@drawable/replay"/>
+
+    <Button
+        style="@style/Button"
+        android:background="@drawable/play"
+        android:id="@+id/play"
+        android:layout_toRightOf="@id/previous"/>
+
+    <Button
+        style="@style/Button"
+        android:background="@drawable/forward"
+        android:id="@+id/next"
+        android:layout_toRightOf="@id/play"/>
+
+</RelativeLayout>
