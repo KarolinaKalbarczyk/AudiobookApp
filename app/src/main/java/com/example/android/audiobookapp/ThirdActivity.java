@@ -7,61 +7,57 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.ProgressBar;
-import android.widget.TextView;
 import android.os.Handler;
+import android.widget.TextView;
 
-
-import com.example.android.audiobookapp.Utwory2;
-import com.example.android.audiobookapp.UtworyAdapter2;
 
 import java.util.ArrayList;
 
-public class Second extends AppCompatActivity {
+public class ThirdActivity extends AppCompatActivity {
 
-    private ProgressBar progressBar;
+    private ProgressBar pgb;
     private int progressStatus = 0;
     private Handler handler = new Handler();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_second);
+        setContentView(R.layout.activity_third);
 
-        progressBar = (ProgressBar) findViewById(R.id.progressBar);
+        pgb = (ProgressBar) findViewById(R.id.progressBar);
 
         //Create a array
-        final ArrayList<Utwory2> utwory2 = new ArrayList<Utwory2>();
+        final ArrayList<Utwory3> utwory3 = new ArrayList<Utwory3>();
 
-        utwory2.add(new Utwory2(getString(R.string.chapter1_2), getString(R.string.time1_2)));
-        utwory2.add(new Utwory2(getString(R.string.chapter2_2), getString(R.string.time2_2)));
-        utwory2.add(new Utwory2(getString(R.string.chapter3_2), getString(R.string.time3_2)));
-        utwory2.add(new Utwory2(getString(R.string.chapter4_2), getString(R.string.time4_2)));
-        utwory2.add(new Utwory2(getString(R.string.chapter5_2), getString(R.string.time5_2)));
-        utwory2.add(new Utwory2(getString(R.string.chapter6_2), getString(R.string.time6_2)));
-        utwory2.add(new Utwory2(getString(R.string.chapter7_2), getString(R.string.time7_2)));
-        utwory2.add(new Utwory2(getString(R.string.chapter8_2), getString(R.string.time8_2)));
+        utwory3.add(new Utwory3(getString(R.string.chapter1_3), getString(R.string.time1_3)));
+        utwory3.add(new Utwory3(getString(R.string.chapter2_3), getString(R.string.time2_3)));
+        utwory3.add(new Utwory3(getString(R.string.chapter3_3), getString(R.string.time3_3)));
+        utwory3.add(new Utwory3(getString(R.string.chapter4_3), getString(R.string.time4_3)));
+        utwory3.add(new Utwory3(getString(R.string.chapter5_3), getString(R.string.time5_3)));
+        utwory3.add(new Utwory3(getString(R.string.chapter6_3), getString(R.string.time6_3)));
+        utwory3.add(new Utwory3(getString(R.string.chapter7_3), getString(R.string.time7_3)));
 
 
-        UtworyAdapter2 adapter = new UtworyAdapter2(this, utwory2);
-        ListView listView = (ListView) findViewById(R.id.list);
-        listView.setAdapter(adapter);
+        Utwory3Adapter adapter = new Utwory3Adapter(this, utwory3);
+        ListView lsv = (ListView) findViewById(R.id.list);
+        lsv.setAdapter(adapter);
 
         // Set name of item when one of them is clicked
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        lsv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 TextView wyswietl = (TextView) findViewById(R.id.wyswietlRozdzial);
-                wyswietl.setText(utwory2.get(position).getRozdzial());
-                progressBar.setProgress(0);
+                wyswietl.setText(utwory3.get(position).getRozdzial());
+                pgb.setProgress(0);
             }
         });
 
-        Button play = (Button) findViewById(R.id.play);
-        Button previous = (Button) findViewById(R.id.previous);
-        Button next = (Button) findViewById(R.id.next);
+        Button btn1 = (Button) findViewById(R.id.play);
+        Button btn2 = (Button) findViewById(R.id.previous);
+        Button btn3 = (Button) findViewById(R.id.next);
 
 
-        play.setOnClickListener(new View.OnClickListener() {
+        btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // Set the progress status zero on each button click
@@ -87,7 +83,7 @@ public class Second extends AppCompatActivity {
                         handler.post(new Runnable() {
                             @Override
                             public void run() {
-                                progressBar.setProgress(progressStatus);
+                                pgb.setProgress(progressStatus);
                             }
                         });
                     }
@@ -95,19 +91,19 @@ public class Second extends AppCompatActivity {
             }
         });
 
-        previous.setOnClickListener(new View.OnClickListener() {
+        btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 progressStatus -= 30;
-                progressBar.setProgress(progressStatus);
+                pgb.setProgress(progressStatus);
             }
         });
 
-        next.setOnClickListener(new View.OnClickListener() {
+        btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 progressStatus += 30;
-                progressBar.setProgress(progressStatus);
+                pgb.setProgress(progressStatus);
             }
         });
     }

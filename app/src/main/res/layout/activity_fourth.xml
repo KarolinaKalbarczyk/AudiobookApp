@@ -13,7 +13,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         style="@style/ListView"
         android:id="@+id/list"
-        tools:context="com.example.android.musicapp.First">
+        tools:context="com.example.android.musicapp.FourthActivity">
 
     </ListView>
 

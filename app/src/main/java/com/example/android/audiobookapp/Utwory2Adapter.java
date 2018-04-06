@@ -13,9 +13,9 @@ import java.util.ArrayList;
  * Created by Samsung on 2018-03-22.
  */
 
-public class UtworyAdapter2 extends ArrayAdapter<com.example.android.audiobookapp.Utwory2>{
+public class Utwory2Adapter extends ArrayAdapter<com.example.android.audiobookapp.Utwory2>{
 
-    public UtworyAdapter2(Context context, ArrayList<com.example.android.audiobookapp.Utwory2> utwory2) {
+    public Utwory2Adapter(Context context, ArrayList<com.example.android.audiobookapp.Utwory2> utwory2) {
         super(context, 0, utwory2);
     }
 

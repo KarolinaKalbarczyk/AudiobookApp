@@ -17,21 +17,29 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".First"
-            android:label="Marc Elsberg - Blackout" />
+            android:name=".FirstActivity"
+            android:label="Marc Elsberg - Blackout"
+            android:parentActivityName=".MainActivity"/>
         <activity
-            android:name=".Second"
-            android:label="J.R.R. Tolkien - Hobbit" />
+            android:name=".SecondActivity"
+            android:label="J.R.R. Tolkien - Hobbit"
+            android:parentActivityName=".MainActivity"/>
         <activity
-            android:name=".Third"
-            android:label="Agatha Christie - A.B.C." />
+            android:name=".ThirdActivity"
+            android:label="Agatha Christie - A.B.C."
+            android:parentActivityName=".MainActivity"/>
         <activity
-            android:name=".Fourth"
-            android:label="Hanya Yanagihara - Little live" />
-        <activity android:name=".Fifth"
-            android:label="N.E. Conneely - Witch for hire"/>
-        <activity android:name=".Sixth"
-            android:label="J.K. Rowling - Harry Potter">
+            android:name=".FourthActivity"
+            android:label="Hanya Yanagihara - Little live"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".FifthActivity"
+            android:label="N.E. Conneely - Witch for hire"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".SixthActivity"
+            android:label="J.K. Rowling - Harry Potter"
+            android:parentActivityName=".MainActivity">
         </activity>
     </application>
 

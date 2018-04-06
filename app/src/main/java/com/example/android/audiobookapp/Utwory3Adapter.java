@@ -13,10 +13,10 @@ import java.util.ArrayList;
  * Created by Samsung on 2018-03-22.
  */
 
-public class UtworyAdapter4 extends ArrayAdapter<com.example.android.audiobookapp.Utwory4>{
+public class Utwory3Adapter extends ArrayAdapter<com.example.android.audiobookapp.Utwory3>{
 
-    public UtworyAdapter4(Context context, ArrayList<com.example.android.audiobookapp.Utwory4> utwory4) {
-        super(context, 0, utwory4);
+    public Utwory3Adapter(Context context, ArrayList<com.example.android.audiobookapp.Utwory3> utwory3) {
+        super(context, 0, utwory3);
     }
 
     @Override
@@ -27,7 +27,7 @@ public class UtworyAdapter4 extends ArrayAdapter<com.example.android.audiobookap
                     R.layout.list_item, parent, false);
         }
 
-        com.example.android.audiobookapp.Utwory4 currentUtwory = getItem(position);
+        com.example.android.audiobookapp.Utwory3 currentUtwory = getItem(position);
 
         TextView rozdzial = (TextView) listItemView.findViewById(R.id.rozdzial);
         rozdzial.setText(currentUtwory.getRozdzial());

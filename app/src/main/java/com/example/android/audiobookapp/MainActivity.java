@@ -4,15 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.GridView;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import com.example.android.audiobookapp.Fifth;
-import com.example.android.audiobookapp.Fourth;
-import com.example.android.audiobookapp.R;
-import com.example.android.audiobookapp.Second;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,14 +16,14 @@ public class MainActivity extends AppCompatActivity {
 
         //Find the View that shows first category
 
-        TextView first = (TextView) findViewById(R.id.first);
+        TextView txv1 = (TextView) findViewById(R.id.first);
 
         // Set a clickListener on a View
-        first.setOnClickListener(new View.OnClickListener(){
+        txv1.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                //Create a new intent to open the {@link First}
-                Intent firstIntent = new Intent(MainActivity.this, com.example.android.audiobookapp.First.class);
+                //Create a new intent to open the {@link FirstActivity}
+                Intent firstIntent = new Intent(MainActivity.this, FirstActivity.class);
 
                 //start the new activity
                 startActivity(firstIntent);
@@ -39,56 +31,56 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // second activity
-        TextView second = (TextView) findViewById(R.id.second);
+        TextView txv2 = (TextView) findViewById(R.id.second);
 
-        second.setOnClickListener(new View.OnClickListener() {
+        txv2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent secondIntent = new Intent(MainActivity.this, Second.class);
+                Intent secondIntent = new Intent(MainActivity.this, SecondActivity.class);
                 startActivity(secondIntent);
             }
         });
 
         //third activity
 
-        TextView third = (TextView) findViewById(R.id.third);
+        TextView txv3 = (TextView) findViewById(R.id.third);
 
-        third.setOnClickListener(new View.OnClickListener() {
+        txv3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent thirdIntent = new Intent(MainActivity.this, com.example.android.audiobookapp.Third.class);
+                Intent thirdIntent = new Intent(MainActivity.this, ThirdActivity.class);
                 startActivity(thirdIntent);
             }
         });
 
         //fourth activity
 
-        TextView fourth = (TextView) findViewById(R.id.fourth);
+        TextView txv4 = (TextView) findViewById(R.id.fourth);
 
-        fourth.setOnClickListener(new View.OnClickListener() {
+        txv4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent fourthIntent = new Intent(MainActivity.this, Fourth.class);
+                Intent fourthIntent = new Intent(MainActivity.this, FourthActivity.class);
                 startActivity(fourthIntent);
             }
         });
 
-        TextView fifth = (TextView) findViewById(R.id.fifth);
+        TextView txv5 = (TextView) findViewById(R.id.fifth);
 
-        fifth.setOnClickListener(new View.OnClickListener() {
+        txv5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent fifthIntent = new Intent(MainActivity.this, Fifth.class);
+                Intent fifthIntent = new Intent(MainActivity.this, FifthActivity.class);
                 startActivity(fifthIntent);
             }
         });
 
-        TextView sixth = (TextView) findViewById(R.id.sixth);
+        TextView txv6 = (TextView) findViewById(R.id.sixth);
 
-        sixth.setOnClickListener(new View.OnClickListener() {
+        txv6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent sixthIntent = new Intent(MainActivity.this, com.example.android.audiobookapp.Sixth.class);
+                Intent sixthIntent = new Intent(MainActivity.this, SixthActivity.class);
                 startActivity(sixthIntent);
             }
         });
